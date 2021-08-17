@@ -79,30 +79,9 @@ const Signup = (props) => {
         },
     });
     const classes = useStyles();
-    return ( <>
-        {/* <h1>Signup page</h1> */}
-        {/* <div>
-            <div>
-                Username
-            <input value={username} onChange={(e) => setUsername(e.target.value)}></input>
-            </div>
-            <div>
-                Email
-            <input value={email} onChange={(e) => setEmail(e.target.value)}></input>
-            </div>
-            <div>
-                Password
-            <input value={password} onChange={(e) => setPassword(e.target.value)}></input>
-            </div>
-            <div>
-                Profile Image
-            <input type="file" accept="image/*" onChange={(e) => handleFileSubmit(e)}></input>
-            </div>
-        </div>
-        <button onClick={handleSignUp}>Sign up</button> */}
-        {/* <h2 style = {{color: "red"}}>{message}</h2>{" "} */}
-        <div className={classes.centerElements} >
-            <Card variant="outlined" className={classes.root} >
+    return (
+        <div  className={classes.centerElements} >
+            <Card variant="outlined"  style={{marginTop:"7rem"}} className={classes.root}>
                 <CardMedia image={logo} style={{height: "5rem", backgroundSize: "contain"}}>
                 </CardMedia>
                 <CardContent className={classes.centerElements}>
@@ -129,7 +108,7 @@ const Signup = (props) => {
                 </CardContent>
             </Card>
         </div>
-    </> );
+ );
 };
  
 export default Signup;

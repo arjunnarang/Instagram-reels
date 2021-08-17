@@ -123,7 +123,6 @@ const Feeds = (props) => {
 
 
     return ( <div>
-        <h1>Feeds</h1>
         <button onClick={handleLogout}>Logout</button>
         <div className="uploadVideo">
             <div>

@@ -47,7 +47,10 @@ const Login = (props) => {
             marginBottom: "1rem",
 
         },
-
+        
+        mt: {
+            marginTop: "7rem",
+        },
         padding:{
             paddingTop:"1rem",
             paddingBottom: "1rem",
@@ -64,11 +67,11 @@ const Login = (props) => {
             <Container>
                 <Grid container spacing={2}>
                     {/*Carousel */}
-                    <Grid item sm={5}>
+                    <Grid item sm={5} style={{marginTop: "7rem"}}>
                         <Paper className={classes.carousal}>Carousel</Paper>
                     </Grid>
                     <Grid item sm={3}>
-                        <Card variant="outlined" className={classes.mb}>
+                        <Card variant="outlined" style={{marginTop: "7rem"}}className={classes.mb}>
                             <CardMedia
                             image = {logo}
                             style={{height: "5rem", backgroundSize: "contain"}}></CardMedia>
